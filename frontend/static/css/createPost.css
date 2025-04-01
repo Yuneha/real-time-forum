@@ -1,0 +1,45 @@
+#create_post {
+  position: relative;
+  height: 100%;
+}
+
+.create_post_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create_post_container h1,
+.create_post_container span {
+  color: rgb(255, 136, 199);
+}
+
+.create_post_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 60vh;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  box-shadow: 6px 6px 8px 0px rgb(255, 136, 199, 0.5);
+  background-color: rgb(41, 70, 157, 0.7);
+}
+
+.create_post_form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.create_post_form #title,
+.create_post_form #message,
+.create_post_form button {
+  margin: 10px;
+}

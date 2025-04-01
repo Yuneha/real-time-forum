@@ -1,0 +1,208 @@
+#dm {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#dm h1 {
+  text-align: center;
+  color: rgb(255, 136, 199, 1);
+}
+
+.chat_content {
+  display: flex;
+  justify-content: center;
+}
+
+.chat_content .chat_users {
+  min-width: 200px;
+  height: 500px;
+  margin: 0 40px 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 6px 6px 8px 0px rgb(255, 136, 199, 0.5);
+  background-color: rgb(41, 70, 157, 0.7);
+}
+
+.chat_users .users_list_header {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+
+.chat_users .users_list_header li {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 136, 199, 1);
+  padding: 5px;
+}
+
+.chat_users #search_user {
+  width: 190px;
+  margin: 0 5px 0 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.chat_users #search_user:focus {
+  outline: none;
+  background-color: rgb(251, 214, 233);
+}
+
+.chat_users .users_list {
+  height: 400px;
+  overflow: scroll;
+  scrollbar-width: none;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.chat_users .chat_user {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  color: rgb(255, 136, 199, 1);
+  margin: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.chat_window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  box-shadow: 6px 6px 8px 0px rgb(255, 136, 199, 0.5);
+  background-color: rgb(41, 70, 157, 0.7);
+  margin-right: 20px;
+}
+
+.chat_window .window_alert {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(255, 136, 199, 1);
+}
+
+.chat_window .chat_window_content {
+  display: none;
+  width: 100%;
+}
+
+.chat_window .chat_window_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 28px;
+  color: rgb(255, 136, 199, 1);
+}
+
+.chat_window .chat_dialogue {
+  width: 880px;
+  height: 360px;
+  margin: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble_left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bubble_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat_dialogue .bubble_dialogue_right {
+  width: fit-content;
+  min-width: 150px;
+  max-width: 780px;
+  min-height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin: 10px 10px 0 10px;
+  background-color: rgba(253, 87, 175, 0.3);
+}
+
+.chat_dialogue .bubble_dialogue_right span,
+.chat_dialogue .bubble_dialogue_left span {
+  min-width: 150px;
+  max-width: 700px;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  margin: 5px;
+  border: none;
+}
+
+.chat_dialogue .bubble_dialogue_right span {
+  float: right;
+}
+
+.chat_dialogue .bubble_dialogue_left span {
+  float: left;
+}
+
+.chat_dialogue .bubble_dialogue_left {
+  width: fit-content;
+  min-width: 150px;
+  max-width: 780px;
+  min-height: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin: 10px 10px 0 10px;
+  background-color: rgba(251, 152, 205, 0.3);
+}
+
+.chat_window .chat_action {
+  display: flex;
+  width: 840px;
+  height: 30px;
+  margin: 0 30px 0 30px;
+}
+
+.chat_action input[type="text"] {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0px 10px 0 10px;
+  border: none;
+}
+
+.chat_action input[type="text"]:focus {
+  outline: none;
+  background-color: rgb(251, 214, 233);
+}
+
+.chat_action input[type="button"] {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: rgb(251, 214, 233, 1);
+}
+
+.chat_action input[type="button"]:hover {
+  background-color: rgb(249, 173, 212);
+}
+
+#typingIndicator {
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 5px;
+  color: rgb(255, 136, 199, 1);
+  font-weight: bold;
+}

@@ -1,0 +1,141 @@
+#authentification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 355px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  box-shadow: 6px 6px 8px 0px rgb(255, 136, 199, 0.5);
+  background: url(/frontend/static/img/test.jpg);
+  background-size: cover;
+}
+
+#authentification input:focus {
+  outline: none;
+  background-color: rgb(251, 214, 233);
+}
+
+.register_form,
+.login_form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 213.4px;
+  transition: all 0.5s ease;
+}
+
+.login_form {
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: white;
+  background: linear-gradient(
+    to left,
+    rgba(255, 136, 199, 0.6),
+    rgba(255, 136, 199, 0.3),
+    rgba(255, 136, 199, 0)
+  );
+}
+
+.register_form {
+  z-index: 0;
+  display: flex;
+  height: 100%;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 136, 199, 0.6),
+    rgba(255, 136, 199, 0.3),
+    rgba(255, 136, 199, 0)
+  );
+}
+
+#register_content_1,
+#register_content_2 {
+  text-align: center;
+}
+
+#authentification h1 {
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
+
+#authentification input {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+#authentification button {
+  margin: 5px;
+  width: fit-content;
+}
+
+#to_register {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#switch {
+  font-size: 24px;
+  z-index: 5;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch_left {
+  left: 0;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 136, 199, 0.3),
+    rgba(255, 136, 199, 0)
+  );
+}
+
+.switch_right {
+  right: 0;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  background: linear-gradient(
+    to left,
+    rgba(255, 136, 199, 0.3),
+    rgba(255, 136, 199, 0)
+  );
+}
+#register_button_Back {
+  display: none;
+}
+.buttons {
+  display: flex;
+}
+
+select {
+  width: 100px;
+  text-align: center;
+  padding: 1px;
+}

@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+  .chat_window {
+    width: 800px;
+  }
+
+  .chat_window .chat_dialogue {
+    width: 780px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right,
+  .chat_dialogue .bubble_dialogue_left {
+    width: fit-content;
+    min-width: 150px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right span,
+  .chat_dialogue .bubble_dialogue_left span {
+    min-width: 150px;
+    max-width: 700px;
+  }
+
+  .chat_window .chat_action {
+    width: 740px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .chat_window {
+    width: 700px;
+  }
+
+  .chat_window .chat_dialogue {
+    width: 680px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right,
+  .chat_dialogue .bubble_dialogue_left {
+    width: fit-content;
+    min-width: 150px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right span,
+  .chat_dialogue .bubble_dialogue_left span {
+    min-width: 150px;
+    max-width: 600px;
+  }
+
+  .chat_window .chat_action {
+    width: 640px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .chat_window {
+    width: 600px;
+  }
+
+  .chat_window .chat_dialogue {
+    width: 580px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right,
+  .chat_dialogue .bubble_dialogue_left {
+    width: fit-content;
+    min-width: 150px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right span,
+  .chat_dialogue .bubble_dialogue_left span {
+    min-width: 150px;
+    max-width: 500px;
+  }
+
+  .chat_window .chat_action {
+    width: 540px;
+  }
+}
+
+@media (max-width: 900px) {
+  .chat_window {
+    width: 500px;
+  }
+
+  .chat_window .chat_dialogue {
+    width: 480px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right,
+  .chat_dialogue .bubble_dialogue_left {
+    width: fit-content;
+    min-width: 150px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right span,
+  .chat_dialogue .bubble_dialogue_left span {
+    min-width: 150px;
+    max-width: 400px;
+  }
+
+  .chat_window .chat_action {
+    width: 440px;
+  }
+}
+
+@media (max-width: 800px) {
+  .chat_window {
+    width: 400px;
+  }
+
+  .chat_window .chat_dialogue {
+    width: 380px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right,
+  .chat_dialogue .bubble_dialogue_left {
+    width: fit-content;
+    min-width: 150px;
+  }
+
+  .chat_dialogue .bubble_dialogue_right span,
+  .chat_dialogue .bubble_dialogue_left span {
+    min-width: 150px;
+    max-width: 300px;
+  }
+
+  .chat_window .chat_action {
+    width: 340px;
+  }
+}

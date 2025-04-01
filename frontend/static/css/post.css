@@ -1,0 +1,110 @@
+#post_page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.post_page_content .post_info_container {
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  max-width: 70vw;
+  height: 70vh;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  box-shadow: 6px 6px 8px 0px rgb(255, 136, 199, 0.5);
+  background-color: rgb(41, 70, 157, 0.7);
+}
+
+@media (max-width: 900px) {
+  .post_page_content .post_info_container {
+    min-width: 40vw;
+    height: 70vh;
+  }
+  .post_page_content .post_message {
+    width: 35vw;
+    height: 45vh;
+  }
+}
+
+.post_page_content .post_info_container h1 {
+  text-align: center;
+  color: rgb(255, 136, 199, 1);
+}
+
+.post_page_content .post_info {
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 136, 199, 1);
+}
+
+.post_page_content .post_message {
+  resize: none;
+  margin: 20px 20px 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: rgb(255, 136, 199, 1);
+  scrollbar-width: none;
+}
+
+.post_page_content .post_action {
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(255, 136, 199, 1);
+}
+
+.post_action .like_post,
+.post_action .dislike_post {
+  cursor: pointer;
+}
+
+.post_page_content .comment_section {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 50vw;
+  margin: 20px;
+}
+
+.post_page_content .comment_section h1 {
+  color: rgb(255, 136, 199);
+}
+
+.post_page_content .create_comment {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 20px 0;
+  height: 20vh;
+  text-align: center;
+}
+
+.comment_section .all_comments {
+  height: 40vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.comment_section .comment_card {
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px 0px rgb(255, 136, 199, 0.5);
+  background-color: rgb(41, 70, 157, 0.7);
+  height: fit-content;
+}
+
+.comment_card .comment_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+  color: rgb(255, 136, 199, 1);
+}
+
+.comment_card .comment_message {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 136, 199, 1);
+  margin: 0 20px 10px 20px;
+  resize: none;
+  border: none;
+}
